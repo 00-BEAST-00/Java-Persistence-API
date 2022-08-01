@@ -38,7 +38,7 @@ public class JpaServlet extends HttpServlet {
 		student.setStuemail(email);
 		student.setStupassword(password);
 		daoimp.insertStudent(student);
-		response.getWriter().append("successfull done");
+		//response.getWriter().append("successfull done");
 		RequestDispatcher rd = request.getRequestDispatcher("Successpage.jsp");
 		rd.include(request, response);
 	}
